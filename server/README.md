@@ -19,7 +19,7 @@
 4. HTTP request & response
 5. nodemon and morgan package
 6. API testing with postman
-7. 
+7. Middleware
 8. 
 9. 
 10. 
