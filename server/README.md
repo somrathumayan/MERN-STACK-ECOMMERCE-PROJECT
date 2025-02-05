@@ -12,6 +12,7 @@
 # npm install express
 # npm install --save-dev nodemon
 # npm install --save-dev morgan
+# npm i http-errors
 
 1. Course plan
 2. Environment setup
@@ -21,7 +22,7 @@
 6. API testing with postman
 7. Middleware & Types of Middleware
 8. Express Error Handling Middleware
-9. 
+9. How to handle HTTP errors
 10. 
 11. 
 12. 
