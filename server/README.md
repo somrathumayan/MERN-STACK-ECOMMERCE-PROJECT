@@ -15,6 +15,7 @@
 # npm i http-errors
 # npm i xss-clean
 # npm i express-rate-limit
+# npm i dotenv
 
 1. Course plan
 2. Environment setup
@@ -26,7 +27,7 @@
 8. Express Error Handling Middleware
 9. How to handle HTTP errors
 10. How to secure API -> xss-clean, express-rate-limit
-11. 
+11. Environment variable and git ignore
 12. 
 13. 
 14. 
