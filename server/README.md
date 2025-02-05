@@ -19,8 +19,8 @@
 4. HTTP request & response
 5. nodemon and morgan package
 6. API testing with postman
-7. Middleware
-8. 
+7. Middleware & Types of Middleware
+8. Express Error Handling Middleware
 9. 
 10. 
 11. 

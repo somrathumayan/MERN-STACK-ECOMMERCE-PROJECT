@@ -53,6 +53,17 @@ app.delete("/products", (req, res) => {
 })
 **/
 
+// client error handling
+app.use((req, res, next) => {
+    res.status(404).json({message: "Route not found!"})
+    next();
+})
+
+// server error handling
+app.use((err, req, res, next) => {
+    console.log(err.stack);
+    res.status(500).send("Something broke!")
+})
 
 app.listen(3001, () => {
     console.log("Server is running at port 3001");
