@@ -1,8 +1,11 @@
 const express = require("express");
 const morgan = require("morgan");
+// const bodyParser = require("body-parser");
+
 const createError = require("http-errors");
 const xssClean = require('xss-clean')
 const rateLimit = require("express-rate-limit");
+const userRouter = require("./routers/userRouter");
 
 
 const app = express();
@@ -19,6 +22,8 @@ app.use(morgan("dev"));
 // app.use(isLoggedIn);
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+
+app.use("/api/users", userRouter)
 
 // middleware
 // const isLoggedIn = (req, res, next) => {
@@ -43,16 +48,16 @@ app.get("/", (req, res) => {
 
 
 // isLoggedIn ,
-app.get("/api/user", (req, res) => {
-    console.log(req.body.id);
-    res.status(200).send({
-        message: "User profile returned",
-    });
-});
+// app.get("/products", rateLimiter, (req, res) => {
+//     console.log(req.body.id);
+//     res.status(200).send({
+//         message: "Product profile returned",
+//     });
+// });
 
-app.get("/products", rateLimiter,  (req, res) => {
-    res.send("Get: Products found")
-})
+
+
+
 
 /*
 app.put("/products", (req, res) => {

@@ -28,7 +28,7 @@
 9. How to handle HTTP errors
 10. How to secure API -> xss-clean, express-rate-limit
 11. Environment variable and git ignore
-12. 
+12. MVC Architecture MVC - Model View Controller (MVC)
 13. 
 14. 
 15. 
