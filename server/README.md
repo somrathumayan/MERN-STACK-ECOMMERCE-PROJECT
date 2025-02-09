@@ -16,6 +16,9 @@
 # npm i xss-clean
 # npm i express-rate-limit
 # npm i dotenv
+# npm install mongoose
+# npm i bcrypt
+# 
 
 1. Course plan
 2. Environment setup
@@ -29,6 +32,6 @@
 10. How to secure API -> xss-clean, express-rate-limit
 11. Environment variable and git ignore
 12. MVC Architecture MVC - Model View Controller (MVC)
-13. 
-14. 
+13. Database connection
+14. User schema and model
 15. 
