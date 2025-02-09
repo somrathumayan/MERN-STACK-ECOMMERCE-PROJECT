@@ -34,7 +34,7 @@ const userSchema = new Schema({
             },
             message: props => `Password is too weak! It must be at least 8 characters long, with uppercase, lowercase, number, and special character.`
         },
-        set: (v) => bcrypt.hashSync(v, bcrypt.genSaltSync(10));
+        set: (v) => bcrypt.hashSync(v, bcrypt.genSaltSync(10))
     },
     image: {
         type: String,
